@@ -15,6 +15,7 @@
 			<div data-role="main">
 				<h1>Stuff about page one</h1>
 				<a href="#pagetwo" class="ui-btn" data-transition="slide">Go To Page 2</a>
+				<a href="#pagethree" class="ui-btn" data-transition="slide">Page 3 Dialog</a>
 			</div>
 			<div data-role="footer">
 				<h1>&copy; 2017 OKCoders</h1>
@@ -32,6 +33,14 @@
 			</div>
 			<div data-role="footer">
 				<h1>&copy; 2017 OKCoders</h1>
+			</div>
+		</div>
+
+		<!-- Our third page -->
+		<div data-role="page" data-dialog="true" id="pagethree">
+			<div data-role="main" class="ui-content">
+				<p>This is a dialog, you should probably click the link below and leave.</p>
+				<a href="#pageone" class="ui-btn" data-transition="slide">Go Back</a>
 			</div>
 		</div>
 </body>

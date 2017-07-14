@@ -10,14 +10,20 @@
 		<!-- Our first page -->
 		<div data-role="page" id="pageone">
 			<div data-role="header">
-				 <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ">Home</a>
-				<h1>Page Five</h1>
-				<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left ui-corner-all ui-shadow ">Search</a>
+				 <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Home</a>
+				<h1>Welcome Home</h1>
+				<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Search</a>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" class="ui-btn-active"  data-transition="slide">Home</a></li>
+						<li><a href="#pagetwo" data-transition="slide">Page 2</a></li>
+						<li><a href="#pagefour" data-transition="slide">Page 4</a></li>
+					</ul>
+				</div>
 			</div>
 			<div data-role="main">
 				<h1>Stuff about page one</h1>
 				<div data-role="controlgroup" data-type="horizontal" style="text-align:center">	
-					<a href="#pagetwo" class="ui-btn" data-transition="slide">Go To Page 2</a>
 					<a href="#pagethree" class="ui-btn" data-transition="slide">Page 3 Dialog</a>
 				</div>
 			</div>
@@ -28,17 +34,24 @@
 					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Instagram</a>
 				</div>
 			</div>
-			</div>
 		</div>
 
 		<!-- Our second page -->
 		<div data-role="page" id="pagetwo">
 			<div data-role="header">
-				<h1>Welcome to Page One</h1>
+				 <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Home</a>
+				<h1>Page 2</h1>
+				<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Search</a>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#pageone" data-transition="slide">Home</a></li>
+						<li><a href="#" class="ui-btn-active"  data-transition="slide">Page 2</a></li>
+						<li><a href="#pagefour" data-transition="slide">Page 4</a></li>
+					</ul>
+				</div>
 			</div>
 			<div data-role="main">
 				<h1>Stuff about page two</h1>
-				<a href="#pageone" class="ui-btn" data-transition="slide">Go To Page 1</a>
 			</div>
 			<div data-role="footer">
 				<div data-role="controlgroup" data-type="horizontal"  style="text-align:center;">
@@ -55,6 +68,33 @@
 			<div data-role="main" class="ui-content">
 				<p>This is a dialog, you should probably click the link below and leave.</p>
 				<a href="#pageone" class="ui-btn" data-transition="slide">Go Back</a>
+			</div>
+		</div>
+
+		<!-- Our fourth page -->
+		<div data-role="page" id="pagefour">
+			<div data-role="header">
+			 <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ">Home</a>
+				<h1>Welcome Home</h1>
+				<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left ui-corner-all ui-shadow ">Search</a>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#pageone" data-transition="slide">Home</a></li>
+						<li><a href="#pagetwo" data-transition="slide">Two</a></li>
+						<li><a href="#" class="ui-btn-active">Four</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>This is page four</p>
+				<a href="#pageone" class="ui-btn" data-transition="slide">Go Home</a>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Facebook</a>
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Twitter</a>
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Instagram</a>
+				</div>
 			</div>
 		</div>
 </body>
